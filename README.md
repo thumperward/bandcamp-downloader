@@ -196,3 +196,8 @@ If you are running windows and having issues getting things running (that is
 not related to WSL crashes, DBUS errors, or Visual C++ errors) you might have
 some luck with some of the information in [this issue
 report](https://github.com/easlice/bandcamp-downloader/issues/21).
+
+## TODO
+
+-   Replace argparse with click
+-   Handle verbose logging properly instead of with deeply nested if statements

@@ -4,10 +4,6 @@
 	"features": {
 		"ghcr.io/devcontainers/features/python:1": {},
 		"ghcr.io/devcontainers-contrib/features/poetry:2": {}
-	}
-	// "customizations": {},
-	"postAttachCommand": {
-		"safe-dir": "git config --global --add safe.directory ${containerWorkspaceFolder}"
 	},
 	"customizations": {
 		"vscode": {
@@ -16,5 +12,9 @@
 				"ms-python.autopep8"
 			]
 		}
+	},
+	"postAttachCommand": {
+		"safe-dir": "git config --global --add safe.directory ${containerWorkspaceFolder}",
+		"poetry": "poetry install"
 	}
 }
