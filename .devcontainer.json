@@ -1,0 +1,20 @@
+{
+	"name": "Debian",
+	"image": "mcr.microsoft.com/devcontainers/base:bullseye",
+	"features": {
+		"ghcr.io/devcontainers/features/python:1": {},
+		"ghcr.io/devcontainers-contrib/features/poetry:2": {}
+	}
+	// "customizations": {},
+	"postAttachCommand": {
+		"safe-dir": "git config --global --add safe.directory ${containerWorkspaceFolder}"
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"tamasfe.even-better-toml",
+				"ms-python.autopep8"
+			]
+		}
+	}
+}
